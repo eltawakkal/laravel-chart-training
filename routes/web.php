@@ -16,4 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('dashboard');
 Route::post('/store', [HomeController::class, 'store'])->name('user.Store');
+Route::post('/update', [HomeController::class, 'update'])->name('user.Update');
+Route::post('/destroy', [HomeController::class, 'destroy'])->name('user.Destroy');
 Route::post('marhalah/store', [HomeController::class, 'storeMarhalah'])->name('marhalah.Store');
